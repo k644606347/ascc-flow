@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^1.1.4",
     "@vue-flow/background": "latest",
     "@vue-flow/controls": "latest",
     "@vue-flow/core": "^1.41.2",
     "@vue-flow/minimap": "latest",
+    "element-plus": "^2.8.6",
     "vue": "^3.5.10"
   },
   "devDependencies": {

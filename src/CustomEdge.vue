@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <BaseEdge :path="path[0]" />
+  <BaseEdge :path="path[0]" :markerStart="props.markerStart" :markEnd="props.markerEnd" />
 
   <EdgeLabelRenderer>
     <div

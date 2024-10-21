@@ -7,12 +7,15 @@ const counter = ref(0)
 
 <template>
   <div class="custom-node">
-    <Handle type="target" :position="Position.Top" />
-    <button class="increment nodrag" @click="counter++">Increment</button>
+    <!-- <Handle type="target" :position="Position.Top" /> -->
+    <Handle type="target" :position="Position.Left" />
+    <!-- <button class="increment nodrag" @click="counter++">Increment</button> -->
 
-    <div v-if="counter > 0" class="counter">
+    <!-- <div v-if="counter > 0" class="counter">
       <div class="count" v-for="count of counter" :key="`count-${count}`">{{ count }}</div>
-    </div>
+    </div> -->
+    <div>{{ $attrs.label }}</div>
+    <Handle type="source" :position="Position.Right" />
   </div>
 </template>
 
